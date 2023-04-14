@@ -9,8 +9,22 @@
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
+		let s= prompt("Enter a String");
+		let obj={};
+		let ans="";
+		let charMap = new Map();
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i];
+    if (charMap.has(char)) {
+      ans=char;
+		break;
+    } else {
+      charMap.set(char, 1);
+    }
+		
+		alert(ans);
 </script>
 
 </body>
-
+  
 </html>
